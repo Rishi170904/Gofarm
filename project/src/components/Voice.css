@@ -1,0 +1,116 @@
+/* General styles */
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Language selector */
+  .language-selector {
+    margin-bottom: 20px;
+  }
+  
+  .language-selector label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .language-selector select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Input section */
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-section input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .input-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-section button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .input-section button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  /* Response section */
+  .response-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .response-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .response-text {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .response-text p {
+    margin: 0 0 10px 0;
+  }
+  
+  /* Loading animation */
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
