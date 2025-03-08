@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # 🌾 GoFarm - Smart Farming Solution
 
@@ -171,3 +172,6 @@ npm run dev
 
 
 
+=======
+# Gofarm
+>>>>>>> f909b7636814a4da43551f3f679a7921ee525d0f
